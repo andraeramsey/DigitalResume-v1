@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="ntf-8">
+	<!--Responsive Tag-->
+	<meta name="viewport" content="width=device-width" , initial-scale=1, shrink-to-fit="yes">
+	<link href="img/bitmoji-iconv3.png" rel="icon" type="image/x-icon">
+	<title>Home - Andrae Ramsey</title>
+	<!--Add a site transition?-->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b76e79">
+	<meta name="msapplication-TileColor" content="#b76e79">
+	<meta name="theme-color" content="#b76e79">
+
+	<!--Font Awesome Link-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<style>
+		@font-face {
+			font-family: "BP";
+			src: url(css/fonts/Panther.ttf);
+
+		}
+
+		@font-face {
+			font-family: "Grid";
+			src: url(css/fonts/Amethyst.ttf);
+		}
+
+		html {
+			position: relative;
+			min-height: 100%;
+			font-family: "BP";
+		}
+
+		/*body{background-image: url("./img/AI_BG.jpg");}*/
+		body {
+			/*Version does not cover top on mobile*/
+			/*background-image: url("./img/bg/neural.jpg");
+			background-repeat: no-repeat;*/
+			background-image: url("./img/bg/neural.jpg");
+			background-attachment: fixed;
+			background-position: center;
+			/* Margin bottom by footer height
+			margin-bottom: 50px;*/
+			/* Scaled for coverage on mobile
+			body{
+			background-image: url("./img/neural-bg.jpg");
+			background-repeat: repeat;
+    		background-attachment: scroll;
+    		background-position: center;
+			*/
+		}
+
+		h1 {
+			color: white;
+			text-align: center;
+		}
+
+		.footer {
+			/*
+			position: absoulte;
+			text-align: center;*/
+			position:relative;
+			display: flex;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			background-color: #b76e79;
+			/* background-img: ;*/
+
+		}
+
+		.footer:hover {
+			font-family: Courier New, Courier, monospace;
+		}
+
+		.footer-text{
+			position:relative;
+			display: flex;
+			/*display: inline;*/
+			align-content: left;
+		}
+
+		.footer-links{
+			position:relative;
+			display: flex;
+			/*display: inline;*/
+			align-content: right;
+		}
+
+		span2 {
+			/*font-family: "BP";*/
+			color: rgb(255, 182, 0);
+
+			/*color: rgb(100,65,0);
+				*/
+		}
+		/*span3{
+				font-size: 45px;
+		}*/
+		span4 {
+			color: rgb(300, 0, 0);
+			font-size: 10px;
+		}
+		/*a{
+				background-color: white;
+				opacity: .8;
+				font-family: "BP";
+				font-size: 30px;
+				font-weight: 800;
+				text-align: right;
+			}*/
+		h2 {
+			background-color: rgba(199, 147, 212, .5);
+			padding-top: 5px;
+			font-family: "BP";
+			color: black;
+		}
+
+		h2:hover {
+			font-family: Courier New, Courier, monospace;
+		}
+
+		h4 {
+			font-family: Courier New, Courier, monospace;
+			color: rgb(500, 500, 500);
+		}
+
+		/*a:link, a:visited { }*/
+		#code,
+		#console {
+			height: auto;
+		}
+
+		#console {
+			padding: 50px;
+			opacity: 1;
+		}
+
+		#code {
+			font-family: "Courier New", Courier, monospace;
+			/*font-family: "console";*/
+			letter-spacing: -1px;
+			margin-bottom: 20px;
+			background-color: rgba(0, 0, 0, .8);
+			/*#b76e79;*/
+			color: rgb(500, 500, 500);
+			width: 90%;
+			align-content: center;
+		}
+
+		#contact {
+			background-color: rgba(0, 0, 0, .8);
+			/*#b76e79;*/
+			color: rgb(500, 500, 500);
+		}
+
+		a:link {
+			color: red;
+		}
+
+		a:visited {
+			color: green;
+		}
+
+		a:hover {
+			color: hotpink;
+		}
+
+		a:active {
+			color: blue;
+		}
+
+		img {
+			/*width:20%;
+  			float:left; 
+  			margin:0;*/
+			-webkit-transition: all 1s
+		}
+
+		.blur {
+			-webkit-filter: blur(2px);
+		}
+
+		.brightness {
+			-webkit-filter: brightness(0.25);
+		}
+
+		.invert {
+			-webkit-filter: invert(100%);
+		}
+
+		img:hover {
+			-webkit-filter: none;
+		}
+
+		nav {
+			width: 100%;
+			height: 30px;
+			background-color: #404242;
+			overflow: hidden;
+			display: flex;
+			justify-content: space-around;
+			border: black;
+		}
+
+		nav a {
+			display: block;
+			float: left;
+			font-family: sans-serif;
+			font-size: 20px;
+			color: white;
+			border: black;
+			text-shadow: 1px -1px -6px #000;
+			text-decoration: none;
+			padding-top: 12px;
+			padding-right: 10px;
+			padding-bottom: 20px;
+			padding-left: 10px;
+			margin-top: -6px;
+			/*background-color: rgba(160, 160, 160, .1);
+			flex-wrap: wrap;
+  			align-content: space-between;*/
+		}
+
+		nav a:hover {
+			background-color: rgb(124, 89, 133);
+		}
+
+		nav a:link {
+			color: white;
+		}
+
+		nav a:visited {
+			color: white;
+		}
+
+		nav a:hover {
+			color: black;
+			text-shadow: 1px 1px 2px #c4c4c4;
+		}
+
+		nav a:active {
+			color: red;
+		}
+		nav #active{
+			background-color: rgb(90, 90, 90);
+		}
+		#logo {
+			font-family: 'Hind', sans-serif;
+			font-size: 28px;
+			letter-spacing: -1px;
+			text-shadow: 1px 1px 2px #c4c4c4;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-right: 10px;
+			margin-top: -13px;
+		}
+	</style>
+	<!--ReCAPTCHA-->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script>
+		function address() {
+			var base64EncodedEmail = "bWFpbHRvOmFuZHJhZXJhbXNleUBnbWFpbC5jb20=";
+			location.href = atob(base64EncodedEmail);
+		}	
+	</script>
+
+</head>
+
+<body>
+	<nav>
+		<a id="logo" href="#">{AR}</a>
+		<!--a id="logo" href="#"><img src="img/logo-t.gif"width="30" height="30"></a-->
+		<a id="active" href="#">Home/About</a>
+		<a href="gallery.html">Digital Art</a>
+		<a href="project.html">Projects</a>
+		<!--contact.html-->
+	</nav>
+	<br />
+	<h1>Webpage of Andrae Ramsey</h1>
+	<!--Add some spaceing and a segment-->
+
+
+	<!--Inspired by kalynnakano.com-->
+	<div id="code">
+		<h2 align="center">andrae.bio</h2>
+
+		<div id="console">
+			&gt; andrae.origin<br />
+			<span class="answer">&nbsp;&nbsp;=&gt; "normal" + "," + "il"<br /><br /></span>
+			&gt; andrae.education<br />
+			<span class="answer">&nbsp;&nbsp;=&gt; "illinoisStateUniversity"<br /><br /></span>
+			&gt; andrae.major<br />
+			<span class="answer">&nbsp;&nbsp;=&gt; "information_systems"<br /><br /></span>
+			&gt; andrae.graduationDate<br />
+			<span class="answer">&nbsp;&nbsp;=&gt; "december2017"<br /><br /></span>
+			&gt; andrae.interests<br />
+			<span class="answer">&nbsp;&nbsp;=&gt; ["code", "web_dev","graphic_design", "gaming", "game_dev", "coffee",
+				"audio_production", "music", "long-boarding", "brunch"]<br /><br /></span>
+			&gt; andrae.workExperience.recent(<span2>date</span2>)<br />
+			<br/>
+			<span class="answer">&nbsp;&nbsp;=&gt; Latest Relevant Work Experience<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt; company: "ATS"<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt; role: "Help_Desk_Technician"<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt; startDate: "June.2018"<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt; endDate: "Sept.2018"<br />
+				<br />
+			</span>
+			<span class="answer">&nbsp;&nbsp;=&gt; Latest Work Experience<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt; company: "StateFarm"<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt; role: "Claim_Specialist-Property"<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt; startDate: "Sept.2018"<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;==&gt; currentDate:
+				&lt;
+				<span2>
+					<script type="text/javascript">
+						var currentTime = new Date()
+						var month = currentTime.getMonth() + 1
+						var day = currentTime.getDate()
+						var year = currentTime.getFullYear()
+						document.write(month + "/" + day + "/" + year)
+					</script>
+				</span2>&gt;
+				<br />
+				<br />
+			</span>
+			
+
+			&gt; andrae.resume<br />
+			<span class="answer">&nbsp;&nbsp;=&gt;  "<a target="_blank" href="AndraeRamsey_txt_Resume2.docx"
+					title="MS Word version of my resume (will convert to .txt w/o losing data)">txtConversionSafe.docx</a>"<br /><br /></span>
+			&gt; andrae.thoughts<br />
+			<span class="answer">&nbsp;&nbsp;=&gt; ["<a target="_blank" href="http://www.twitter.com/r4msey_a"
+					title="Link to my twitter">@R4MSEY_A</a>"</span>
+			"<a target="_blank" href="http://studioussuspect.tumblr.com"
+				title="Digital art portfolio of sorts">studioussuspect.tumblr.com</a>"]<br />
+			&gt; andrae.email<br />
+			<span class="answer">&nbsp;&nbsp;=&gt; "<a href="mailto.pdf" target="_blank"
+					title="PDF file that contain a mailto: of my full email (obsuring from bots)">Andraeramsey|gmail</a>"<br /><br /></span>
+		</div>
+	</div>
+	<a href="index-enter.html"><button>Return to entrance</button></a>
+	<br />
+	<br />
+	<br />
+	<br />
+	<!--<a style="text-align:left;" href="AndraeRamseyResume.pdf"> RESUME </a>
+		<a style="text-align:right;" href="Grad Resumev4.docx">  .txt convertable version</a> -->
+	<div>
+		<footer class="footer">
+			<footer-text class="footer-text">
+				<span> Andrae Ramsey &lt;NMD Development&gt; 2019 | Normal, IL &nbsp;</span>
+			</footer-text>
+				<footer-links class="footer-links">
+					<a href="https://www.github.com/andraeramsey" title="GitHub/andraeramsey" target="_blank"
+						title="View my projects!"><img src="img/github2.png" width="45" height="45" alt="GitHub Logo"
+							class="blur"></a>
+					<a href="https://twitter.com/R4msey_a" target="_blank" title="Another link to my Twitter"><img
+							src="img/twitter2.png" width="45" height="45" alt="Twitter Logo" class="blur"></a>
+					<a href="https://www.linkedin.com/in/andraeramsey" target="_blank" title="My LinkedIn profile"><img
+							src="img/linkedin3.png" width="45" height="45" alt="LinkedIn Logo" class="blur"></a>
+					<a onclick="address()" target="_blank" title="Obscured email, mailto: fucntion still works"><img
+							src="img/email2.png" width="45" height="45" alt="Mail Logo" class="blur"></a>
+					
+
+				</footer-links>
+			<!--/div-->
+		</footer>
+	</div>
+
+	<!-- Bootstrap core JavaScript================================================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script-->
+	<!--script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script-->
+		
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+		integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+		crossorigin="anonymous"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<!--script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script-->
+	<noscript>Please enable Javascript.</noscript>
+
+</body>
+
+</html>
