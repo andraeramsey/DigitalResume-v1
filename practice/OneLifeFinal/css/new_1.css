@@ -1,0 +1,48 @@
+ 
+body {
+  margin: 0;
+  background-image: url("../img/wallpaper_gallery.png") ;
+  $lg: 580px;;
+}
+
+h1{
+	color: white;
+	text-align: center;
+}
+
+#instafeed {
+  width: 100%;
+}
+
+  a {
+    position: relative;
+    width: 50%;
+	}
+	
+    @media only screen and (min-width: $lg) {
+      width: 25%
+    }
+	
+  .column {
+		float: left;
+		width: 100%;
+		padding-bottom:10px;
+		padding-right:15px;
+    }
+   img {
+	  width:20%;
+	  padding-bottom:10px;
+	  padding-right:15px;
+    }
+	.row:after{
+		content:"";
+		display:table;
+		clear:both;
+	}
+	h1.title {
+    position: relative;
+    left: 250px;
+    top: 3px;
+}
+
+/*source: https://codepen.io/anon/pen/ZaqXGB*/

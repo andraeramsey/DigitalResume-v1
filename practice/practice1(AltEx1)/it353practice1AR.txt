@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Andrae's 353 Practice 1 </title>
+</head>
+
+<body>
+</h1> Practice 1 for IT 353-002 </h1>
+<p> This is the first assignment for the class </p>
+
+</h1> This is the first heading </h1>
+<p> This is the first paragraph </p>
+
+</h1 style color:green;> This is the second heading </h1>
+<p> This is the second paragraph </p>
+
+</h1> This is the third heading </h1>
+<p> This is the third paragraph </p>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body {
+
+	background-image: url("../img/wallpaper_products.png") ;
+	min-height: 500px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+	color:white;
+}
+
+div{
+	color: black;
+}
+
+ul{
+	text-align: right;
+}
+
+/*iframe {
+		height: 750;
+		width: 500;
+		border 2px solid #f1f1f1;
+}*/
+
+@font-face{
+	font-family: "OE";
+	src: url("fonts/Old_Englished_Boots.ttf");
+}

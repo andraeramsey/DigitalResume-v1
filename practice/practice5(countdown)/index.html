@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Styled JavaScript Countdown Clock</title>
+      <link rel="stylesheet" href="css/style.css">
+	  
+  </head>
+
+  <body>
+
+		<h1>Countdown Clock</h1>
+	<div id="clockdiv">
+	  <div>
+	  <input type="number" class="days" min="0" max="99" id="days">
+		<!--span class="days"></span-->
+		<div class="smalltext">Days</div>
+	  </div>
+	  <div>
+		<input type="number" class="hours" min="0" max="24" id="hours">
+		<!--span class="hours"></span-->
+		<div class="smalltext">Hours</div>
+	  </div>
+	  <div>
+		<input type="number" class="minutes" min="0" max="60" id="minutes">
+		<!--span class="minutes"></span-->
+		<div class="smalltext">Minutes</div>
+	  </div>
+	  <div>
+		<input type="number" class="seconds" min="1" max="60" id="second">	
+		<!-- <span class="seconds"></span>  -->
+		<div class="smalltext">Seconds</div>
+	  </div>
+	</div>
+	<div>
+	
+	<div id="start">
+	<!--button type="button">Start</button-->
+	<button id="starter" onclick= "startCount()">Start</button>
+	</div>
+	
+	<div id="reset">
+	<button id="reseter" onclick= "resetCount()">Stop</button>
+	</div>
+	</div>
+		
+	 <script src="js/index.js"></script> 
+  </body>
+</html>

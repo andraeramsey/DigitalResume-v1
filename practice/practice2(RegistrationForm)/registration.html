@@ -1,0 +1,76 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>	
+<style>
+body {background-color: #895329;}
+
+form {background-color: db9200; border: 3px solid #f1f1f1;}
+
+h1 {padding: 0px 200px;}
+
+label{margin: 0px 10px;}
+
+input[type=text], input[type=email], input[type=password] {
+    position: relative;
+	width: 50%;
+    padding: 7px 15px;
+    margin: 0px 230px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+	
+	
+}
+
+button[type=submit],button[type=reset] {
+	padding: 20px 30px;
+	margin: 6px 0px;
+}
+
+</style>
+</head>
+
+<body>
+
+<form>
+	<center><h1>Registration Form</h1/></center>
+
+	<div>
+	<p>
+	<label><b>First Name:</b></label>
+	<input type="text" name"fstnme" required>
+	</p>
+	
+	<p>
+	<label><b>Last Name:</b></label>
+	<input type="text" name="lstnme" required>
+	</p>
+	
+	<p>
+	<label><b>Username:</b></label>
+	<input type="text" name="usrnme" required>
+	</p>
+	
+	<p>
+	<label><b>E-mail:</b></label>
+	<input type="email" name="email" required>
+	</p>
+	
+	<p>
+	<label><b>Password:</b></label>
+	<input type="password" placeholder="Enter Password" name="pswrd" required>
+	</p>
+	
+	<p>
+	<label><b>Confirm Password:</b></label>
+	<input type="password" placeholder="Repeat Password" name="pswrdtwo" required>
+	</p>
+	
+<center>	<button type="submit">Register</button>
+	<button type="reset">Reset</button> </center>
+	</div>
+</form>
+</body>
+
+</html>

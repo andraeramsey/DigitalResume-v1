@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact | One Life Gallery & Boutique</title>
+<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<!-- Bootstrap Link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+<!--Footer-->
+	<link href="css/sticky-footer.css" rel="stylesheet">
+
+<link href="img/icon/favicon-96x96.png" rel="icon" type="image/x-icon">
+
+<style>
+body {
+
+	background-image: url("img/wallpaper_contact.png") ;
+	min-height: 500px;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+	color:white;
+}
+div{
+opacity: 0.95;
+color:black;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h3 {
+text-align: center;
+}
+.footer{
+background-color: rgba(23,38,57,0.7);
+color: white;
+position: sticky;
+
+}
+@font-face{
+	font-family: "OE";
+	src: url("css/fonts/Old_Englished_Boots.ttf");
+}
+@media screen and (max-width: 477px){
+	.address{
+		visibility: hidden;
+</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<!-- <a class="navbar-brand" href="#"> -->
+			<img src="img/OLGB_3d_logo1.png" width="50" height="50" alt="One Life's Brand Logo">
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			<ul class="navbar-nav mr-auto">
+
+				<h1 class="title" style="padding-left: 1.8em; padding-top:.085em; padding-right: 3em; color:#b50909; font-family: OE, sans-serif; font-weight: normal; font-style: normal; size:36;">ONE LIFE</h1>
+
+				<li class="nav-item"> <a class="nav-link" href="about.html">Home <span class="sr-only">(Home)</span></a> </li>
+				<li class="nav-item"> <a class="nav-link" href="products.html">Products<span class="sr-only">(Products Page)</span></a> </li>
+				<li class="nav-item"> <a class="nav-link" href="creation.html">Creative Space <span class="sr-only">(Next, Creative Space Page)</span></a> </li>
+				<li class="nav-item"> <a class="nav-link" href="gallery.html">Gallery<span class="sr-only">(Gallery Page)</span></a> </li>
+				<li class="nav-item active"> <a class="nav-link" href="#">Contact<span class="sr-only">(current page, Contact Page)</span></a> </li>
+
+			</ul>
+
+		</div>
+	</nav>
+
+	<h3 class="sub-head" style="background-color: rgba(255,0,0,0.6); font-family:Futura, Impact, Helvetica, Arial, sans-serif;"><u>Contact Form</u></h3>
+
+	<div class="container1">
+		<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbySbFNGM3uhCoqJgQowkchVoNEAs8YAW2FHm4X2EJmHrmNRkw2k/exec">
+		<!--Currently a test email-->
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject"/>
+
+			<label for="fname">Full Name</label>
+			<input type="text" id="fname" name="name" placeholder="Your name..."/>
+
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="Your email..."/>
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" style="height:200px"></textarea>
+
+			<input type="submit" value="Submit"/>
+
+		</form>
+	</div>
+
+	<div style="display:none;" id="thankyou_message">
+		<h2 style="color:white"><em>Thanks</em> for contacting us!
+		We will get back to you soon!</h2>
+	</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
+</body>
+
+<footer class="footer" align="center">
+      <div class="container">
+
+			<a href="https://www.facebook.com/OneLife309/" target="_blank" style="filter:invert(100%)"><img src="img/fb_logo.png" width="30" height="30" alt="Facebook Logo"></a>
+
+			<a href="https://www.instagram.com/onelifegallboutique/"target="_blank"><img src="img/ig_logo.png" width="45" height="33" alt="Instagram Logo"></a>
+
+			<a href="https://www.grailed.com/onelifegallery309"target="_blank"><img src="img/w-b_grailed_logo.png" width="30" height="30" alt="Grailed Logo"</a>
+
+			<a href="mailto:onelife309@gmail.com"><img src="img/email_logo.png" width="39" height="24" alt="Envelope"></a>
+
+			<a href="https://www.google.com/maps/place/120+E+Beaufort+St,+Normal,+IL+61761/@40.5090319,-88.9878406,17z/data=!4m5!3m4!1s0x880b7100c1fedf21:0x5b049c79d0fbbfb8!8m2!3d40.5098803!4d-88.9833345"target="_blank" style="filter:invert(100%)"><img src="img/nav_logo.png" width="30" height="30" alt="Location"></a>
+
+		<span class="address" style="color: white;">120 E Beaufort St, Normal, IL 61761 </span>
+      </div>
+</footer>
+
+</html>
