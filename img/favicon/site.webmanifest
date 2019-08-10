@@ -1,0 +1,20 @@
+{
+    "name": "A. Ramsey",
+    "short_name": "A. Ramsey",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#b76e79",
+    "background_color": "#b76e79",
+    "start_url": "andrae-ramsey.com",
+    "display": "standalone"
+}
